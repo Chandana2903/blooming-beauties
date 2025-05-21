@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Screenshot\ 2024-08-22\ 204445.png'); /* Replace with your image filename */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
+}
+
+/* Style for heading section */
+.heading {
+    
+    color: black; /* Black text color */
+    padding: 1rem; /* Add padding around the heading */
+    text-align: center; /* Center align text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Flexbox layout for the about section */
+.about .row {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    gap: 2rem; /* Space between video and content */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    padding: 2rem 0; /* Padding for top and bottom */
+}
+
+/* Video container styles */
+.video-container {
+    flex: 5 10 50rem; /* Flexible width with a base size of 50rem */
+    max-width: 630px; 
+    height: 500px; /* Ensure the container does not exceed 500px */
+}
+
+.video-container video {
+    width: 100%; /* Make the video fill the container */
+    height: auto; /* Maintain aspect ratio */
+   border: 1.5rem 
+    border-radius: 1rem;
+    /*box-shadow: 0.5rem 1rem rgba(0,0,0,.1);*/
+    object-fit: cover;
+    margin-left:20px;
+    margin-top: 33px;
+    padding
+}
+
+/* Content section styles */
+.content {
+    flex: 1 1 40rem; /* Flexible width with a base size of 40rem */
+}
+
+.content h3 {
+    font-size: 2.5rem; /* Adjust title size */
+    color: rgb(223, 33, 179); /* Title color */
+    margin-bottom: .5rem; /* Space below the title */
+}
+
+.subtitle {
+    font-size: 3.5rem; /* Adjust subtitle size */
+    color: #333; /* Subtitle color */
+    margin-bottom: 0.5rem; /* Reduce space below the subtitle */
+}
+
+.content p {
+    padding-left: 10rem;
+    font-size: 1rem; /* Adjust paragraph size */
+    color: #666; /* Adjust paragraph color */
+    padding: .5rem 0;
+    line-height: 1; /* Improve readability */
+    margin: 0 0 .5rem 0; /* Reduce margin between paragraphs */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: #223; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: .3rem;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: rgb(207, 38, 154); /* Change color on hover */
+}
