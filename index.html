@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
 </head>
+    
 <body>
     <header>
         
@@ -25,59 +45,79 @@
             <a href="#" class="fas fa-user"></a>
         </div>
     </header>
-    <section class="home" id="home">
+<section class="home" id="home" style="background:linear-gradient(135deg,#fff8fb,#ffeef6);">
 
-    <div style="display:flex;
-                align-items:center;
-                justify-content:space-between;
-                padding:70px 8%;
-                flex-wrap:wrap;">
+<div style="display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+gap:40px;
+flex-wrap:wrap;">
 
-        <!-- Left Content -->
-        <div style="flex:1; min-width:400px;">
+    <!-- Left Content -->
+    <div style="flex:1;min-width:380px;">
 
-            <h3 style="font-size:70px; color:#333; line-height:1.1;">
-                Blooming <br> Beauties
-            </h3>
+        <h3 style="font-size:72px;
+        color:#333;
+        line-height:1.1;
+        margin-bottom:20px;">
+            Blooming <br> Beauties
+        </h3>
 
-            <span style="font-size:40px; color:#ff4fa3;">
-                Natural & Beautiful Flowers
-            </span>
+        <span style="font-size:38px;
+        color:#ff4fa3;
+        font-weight:bold;">
+            Natural & Beautiful Flowers
+        </span>
 
-            <p style="font-size:24px;
-                      color:#555;
-                      margin:25px 0;
-                      line-height:1.8;
-                      max-width:650px;">
+        <p style="font-size:22px;
+        color:#555;
+        line-height:1.8;
+        margin:30px 0;
+        max-width:650px;">
 
-                Celebrate life's most precious moments with the beauty
-                of fresh blooms from our flower shop. Transform ordinary
-                days into extraordinary memories with our stunning bouquet
-                creations. Express your love, joy and gratitude with our
-                handcrafted floral arrangements.
+            Celebrate life's most precious moments with the beauty of fresh blooms from our flower shop.
+            Transform ordinary days into extraordinary memories with our stunning bouquet creations.
+            Express your love, joy and gratitude with the timeless elegance of our handcrafted floral arrangements.
 
-            </p>
+        </p>
 
-            <a href="#" class="btn">Shop Now</a>
+        <a href="#products"
+        style="display:inline-block;
+        padding:16px 40px;
+        background:#ff4fa3;
+        color:white;
+        border-radius:40px;
+        text-decoration:none;
+        font-size:20px;
+        font-weight:bold;
+        box-shadow:0 10px 20px rgba(255,79,163,.3);">
 
-        </div>
+            Shop Now
 
-        <!-- Right Image -->
-        <div style="flex:1;
-                    text-align:center;
-                    min-width:350px;">
-
-            <img src="flower.png"
-                 alt="Flower Bouquet"
-
-                 style="width:90%;
-                        max-width:600px;
-                        filter:drop-shadow(0px 20px 25px rgba(0,0,0,.25));
-                        animation:float 4s ease-in-out infinite;">
-
-        </div>
+        </a>
 
     </div>
+
+    <!-- Right Image -->
+    <div style="flex:1;
+    min-width:350px;
+    text-align:center;">
+
+        <img
+        src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=800"
+
+        alt="Flower Bouquet"
+
+        style="width:100%;
+        max-width:520px;
+        border-radius:30px;
+        box-shadow:0 25px 50px rgba(0,0,0,.15);
+        animation:float 4s ease-in-out infinite;">
+
+    </div>
+
+</div>
 
 </section>
  <section class="about" id="about">
